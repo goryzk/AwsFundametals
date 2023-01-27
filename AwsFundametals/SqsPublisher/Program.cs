@@ -22,7 +22,13 @@ var sendMessageRequest = new SendMessageRequest
 	MessageBody = JsonSerializer.Serialize(customer),
 	MessageAttributes = new Dictionary<string, MessageAttributeValue>
 	{
-		{ "string", new MessageAttributeValue{StringValue = nameof(CustomerCreated), DataType = "String" } }
+		{ 
+			"MessageType", new MessageAttributeValue
+			{
+				StringValue = typeof(CustomerCreated).Name, 
+				DataType = nameof(String), 
+			} 
+		}
 	}
 };
 

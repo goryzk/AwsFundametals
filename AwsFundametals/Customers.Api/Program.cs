@@ -1,3 +1,4 @@
+using Amazon.SQS;
 using Customers.Api.Database;
 using Customers.Api.Messaging;
 using Customers.Api.Repositories;
@@ -33,6 +34,8 @@ builder.Services.AddSingleton<IDbConnectionFactory>(_ =>
 builder.Services.AddSingleton<DatabaseInitializer>();
 
 builder.Services.Configure<QueueSettings>(builder.Configuration.GetSection(nameof(QueueSettings)));
+builder.Services.AddSingleton<IAmazonSQS, AmazonSQSClient>();
+builder.Services.AddSingleton<ISqsMessenger, SqsMessenger>();
 
 builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
 builder.Services.AddSingleton<ICustomerService, CustomerService>();
