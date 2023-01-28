@@ -14,7 +14,7 @@ var customer = new CustomerCreated
 
 var snsClient = new AmazonSimpleNotificationServiceClient();
 
-var topicArnResponse = await snsClient.FindTopicAsync("Customers2");
+var topicArnResponse = await snsClient.FindTopicAsync("Customers");
 
 var publishRequest = new PublishRequest
 {

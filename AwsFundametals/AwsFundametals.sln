@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Consumer", "Custo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SNS", "SNS", "{CB52001F-55CD-47B1-BA5E-DADB74D40935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnsPublisher", "SnsPublisher\SnsPublisher.csproj", "{75BC6086-D99B-4F0F-BCA8-860D54E43CE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnsPublisher", "SnsPublisher\SnsPublisher.csproj", "{75BC6086-D99B-4F0F-BCA8-860D54E43CE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnsConsumer", "SnsConsumer\SnsConsumer.csproj", "{B9840709-C6FA-4933-818D-D88A741F683E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqsConsumer", "SnsConsumer\SqsConsumer.csproj", "{B9840709-C6FA-4933-818D-D88A741F683E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.SnsPublisher.Api", "Customers.SnsPublisher.Api\Customers.SnsPublisher.Api.csproj", "{ADA105FC-E095-439C-B9F3-5CFE4F470E97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{B9840709-C6FA-4933-818D-D88A741F683E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9840709-C6FA-4933-818D-D88A741F683E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9840709-C6FA-4933-818D-D88A741F683E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA105FC-E095-439C-B9F3-5CFE4F470E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA105FC-E095-439C-B9F3-5CFE4F470E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA105FC-E095-439C-B9F3-5CFE4F470E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA105FC-E095-439C-B9F3-5CFE4F470E97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{032ABDF5-E0FE-4DF7-A953-7DBE16F3BBF2} = {2DBF8B74-57AF-4040-8BD4-243D4607D496}
 		{75BC6086-D99B-4F0F-BCA8-860D54E43CE1} = {CB52001F-55CD-47B1-BA5E-DADB74D40935}
 		{B9840709-C6FA-4933-818D-D88A741F683E} = {CB52001F-55CD-47B1-BA5E-DADB74D40935}
+		{ADA105FC-E095-439C-B9F3-5CFE4F470E97} = {CB52001F-55CD-47B1-BA5E-DADB74D40935}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82792FF9-5097-4CE8-AF89-F696513014F5}
